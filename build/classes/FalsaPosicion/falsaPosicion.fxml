@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="970.0" style="-fx-background-color: #274A87;" stylesheets="@../Carpet/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FalsaPosicion.FalsaPosicionController">
+   <children>
+      <Label layoutX="78.0" layoutY="54.0" text="F(x) =">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="12.5" />
+         </font></Label>
+      <Label layoutX="81.0" layoutY="103.0" text="Xl =">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="12.5" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="146.0" text="Xu =">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="12.5" />
+         </font></Label>
+      <TextField fx:id="txtecuacion" layoutX="122.0" layoutY="50.0" prefHeight="25.0" prefWidth="363.0" promptText="Añadir funcion matematica" />
+      <TextField fx:id="txtxl" layoutX="122.0" layoutY="99.0" prefHeight="25.0" prefWidth="273.0" promptText="Añadir el valor xl" />
+      <TextField fx:id="txtxu" layoutX="122.0" layoutY="142.0" prefHeight="25.0" prefWidth="273.0" promptText="Añadir el valor de xu" />
+      <TextField fx:id="txtporcentaje" layoutX="122.0" layoutY="187.0" prefHeight="25.0" prefWidth="273.0" promptText="Añadir porcentaje minimo" />
+      <Label layoutX="80.0" layoutY="191.0" text="Ea =">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="12.5" />
+         </font></Label>
+      <Button layoutX="707.0" layoutY="219.0" mnemonicParsing="false" onAction="#generarButtonAction" prefHeight="25.0" prefWidth="222.0" text="Generar" />
+      <TableView fx:id="tableview" layoutX="36.0" layoutY="282.0" prefHeight="304.0" prefWidth="901.0">
+        <columns>
+          <TableColumn fx:id="iter" prefWidth="75.0" text="Iter" />
+          <TableColumn prefWidth="187.0" text="Xl" fx:id="xl" />
+            <TableColumn minWidth="0.0" prefWidth="203.0" text="Xu" fx:id="xu" />
+            <TableColumn minWidth="8.0" prefWidth="167.0" text="Xr" fx:id="xr" />
+            <TableColumn fx:id="fxr" prefWidth="75.0" text="F(Xr)" />
+            <TableColumn fx:id="signo" prefWidth="108.0" text="Signo" />
+            <TableColumn fx:id="porcentaje" prefWidth="85.0" text="Ea(%)" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

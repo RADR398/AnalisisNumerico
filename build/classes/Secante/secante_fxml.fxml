@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="871.0" style="-fx-background-color: #274A87;" stylesheets="@../Carpet/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Secante.Secante_fxmlController">
+   <children>
+      <Label layoutX="73.0" layoutY="54.0" text="F(x) =">
+         <font>
+            <Font name="System Bold" size="12.5" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="103.0" text="Xi-1 =">
+         <font>
+            <Font name="System Bold" size="12.5" />
+         </font></Label>
+      <Label layoutX="80.0" layoutY="146.0" text="Xi =">
+         <font>
+            <Font name="System Bold" size="12.5" />
+         </font></Label>
+      <TextField fx:id="txtecuacion" layoutX="122.0" layoutY="50.0" prefHeight="25.0" prefWidth="363.0" promptText="Añadir funcion matematica" />
+      <TextField fx:id="txtx0" layoutX="122.0" layoutY="99.0" prefHeight="25.0" prefWidth="273.0" promptText="Añadir el valor xl" />
+      <TextField fx:id="txtx1" layoutX="122.0" layoutY="142.0" prefHeight="25.0" prefWidth="273.0" promptText="Añadir el valor de xu" />
+      <TextField fx:id="txtporcentaje" layoutX="122.0" layoutY="187.0" prefHeight="25.0" prefWidth="273.0" promptText="Añadir porcentaje minimo" />
+      <Label layoutX="80.0" layoutY="191.0" text="Ea =">
+         <font>
+            <Font name="System Bold" size="12.5" />
+         </font></Label>
+      <Button layoutX="608.0" layoutY="218.0" mnemonicParsing="false" onAction="#generarButtonAction" prefHeight="25.0" prefWidth="222.0" text="Generar" />
+      <TableView fx:id="tableview" layoutX="36.0" layoutY="282.0" prefHeight="304.0" prefWidth="794.0">
+        <columns>
+          <TableColumn fx:id="iter" prefWidth="75.0" text="Iter" />
+          <TableColumn prefWidth="187.0" text="Xi-1" fx:id="x0" />
+            <TableColumn minWidth="0.0" prefWidth="203.0" text="Xi" fx:id="x1" />
+            <TableColumn fx:id="fx1" minWidth="8.0" prefWidth="167.0" text="F(Xi)" />
+            <TableColumn prefWidth="75.0" text="Xr" fx:id="xr" />
+            <TableColumn fx:id="porcentaje" prefWidth="85.0" text="Ea(%)" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

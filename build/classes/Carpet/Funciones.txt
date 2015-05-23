@@ -1,0 +1,16 @@
+var PI=Math.PI;
+var e=Math.E;
+function sin(arg){return Math.sin(arg);}
+function cos(arg){return Math.cos(arg);}
+function tan(arg){return Math.tan(arg);}
+function asin(arg){return Math.asin(arg);}
+function acos(arg){return Math.acos(arg);}
+function atan(arg){return Math.atan(arg);};
+function sinh(arg){return (Math.exp(arg)-Math.exp(-arg)) / 2;}
+function cosh(arg){return (Math.exp(arg)+Math.exp(-arg))/2;}
+function tanh(arg){return (senh(arg)/cosh(arg));}
+function asinh(arg) {return Math.log(arg + Math.sqrt(arg * arg + 1));}
+function acosh(arg) {return Math.log(arg + Math.sqrt(arg * arg - 1));}
+function atanh(arg) {return 0.5 * Math.log((1 + arg) / (1 - arg));}
+
+
