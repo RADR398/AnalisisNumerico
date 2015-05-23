@@ -1,5 +1,9 @@
 
-
+#AnchorPane{
+    
+     -fx-background-color:#595555;
+    
+}
 
 .label{
     
@@ -10,6 +14,27 @@
 .table-view .column-header .label{
     
     -fx-text-fill: #000000;
+    
+    
+}
+.table-view .column-header{
+
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058); 
+}
+
+.table-view .column-header:hover{
+
+    -fx-background-color: linear-gradient(#61a2b1, #000000); 
+}
+#Button{
+    
+   -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    
+}
+
+#Button:hover{
+    
+    -fx-background-color: linear-gradient(#61a2b1, #000000);
     
     
 }

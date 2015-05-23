@@ -12,20 +12,9 @@
         <menus>
           <Menu mnemonicParsing="false" text="Metodo">
             <items>
-                  <MenuItem mnemonicParsing="false" onAction="#newtonRaphsonItemsAction" text="Newton Raphson" />
                   <MenuItem mnemonicParsing="false" onAction="#biseccionItemsAction" text="Biseccion" />
                   <MenuItem mnemonicParsing="false" onAction="#falsaPosicionItemsAction" text="Falsa Posicion" />
                   <MenuItem mnemonicParsing="false" onAction="#secanteItemsAction" text="Secante" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
             </items>
           </Menu>
         </menus>

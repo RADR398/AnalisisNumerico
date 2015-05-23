@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="AnalisisNumerico.jar" size="349399" download="eager" />
+    <jar href="AnalisisNumerico.jar" size="355190" download="eager" />
     <jar href="lib/ext-1.1.1.jar" size="257353" download="eager" />
     <jar href="lib/jep.jar" size="303217" download="eager" />
   </resources>

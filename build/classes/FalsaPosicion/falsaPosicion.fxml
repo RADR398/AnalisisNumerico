@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.paint.*?>
 <?import java.lang.*?>
@@ -8,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="970.0" style="-fx-background-color: #274A87;" stylesheets="@../Carpet/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FalsaPosicion.FalsaPosicionController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="970.0" stylesheets="@../Carpet/Estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FalsaPosicion.FalsaPosicionController">
    <children>
       <Label layoutX="78.0" layoutY="54.0" text="F(x) =">
          <textFill>
@@ -62,7 +63,10 @@
          <font>
             <Font name="System Bold" size="12.5" />
          </font></Label>
-      <Button layoutX="707.0" layoutY="219.0" mnemonicParsing="false" onAction="#generarButtonAction" prefHeight="25.0" prefWidth="222.0" text="Generar" />
+      <Button id="Button" layoutX="462.0" layoutY="210.0" mnemonicParsing="false" onAction="#generarButtonAction" prefHeight="44.0" prefWidth="222.0" text="Generar" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
       <TableView fx:id="tableview" layoutX="36.0" layoutY="282.0" prefHeight="304.0" prefWidth="901.0">
         <columns>
           <TableColumn fx:id="iter" prefWidth="75.0" text="Iter" />
@@ -74,5 +78,10 @@
             <TableColumn fx:id="porcentaje" prefWidth="85.0" text="Ea(%)" />
         </columns>
       </TableView>
+      <Button id="Button" fx:id="Button1" disable="true" layoutX="709.0" layoutY="210.0" mnemonicParsing="false" onAction="#GraficarFuncion" prefHeight="44.0" prefWidth="222.0" text="Graficar" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

@@ -20,7 +20,7 @@ import javafx.beans.property.StringProperty;
 public class PojoPrimary {
     
     private IntegerProperty iteracion;
-    private DoubleProperty xl,xu,xr,fxr,porcentaje;
+    private DoubleProperty xl,xu,xr,fxr,porcentaje,secante;
     private StringProperty signo;
 
     public PojoPrimary() {
@@ -34,7 +34,11 @@ public class PojoPrimary {
         this.fxr = new SimpleDoubleProperty(fxr);
         this.porcentaje = new SimpleDoubleProperty(porcentaje);
         this.signo = new SimpleStringProperty(signo);
+
+        
     }
+
+   
 
     public IntegerProperty getIteracion() {
         return iteracion;

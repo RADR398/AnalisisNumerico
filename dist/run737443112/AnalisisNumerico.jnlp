@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AnalisisNumerico.jnlp">
+  <information>
+    <title>AnalisisNumerico</title>
+    <vendor>ROMMEL</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AnalisisNumerico.jar" size="354209" download="eager" />
+    <jar href="lib/ext-1.1.1.jar" size="257353" download="eager" />
+    <jar href="lib/jep.jar" size="303217" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AnalisisNumerico" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="Principal.Principal"  name="AnalisisNumerico" />
+  <update check="always"/>
+</jnlp>

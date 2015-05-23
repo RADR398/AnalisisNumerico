@@ -6,12 +6,18 @@ import org.lsmp.djep.djep.*;
 import org.nfunk.jep.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.XYChart;
 import javax.swing.table.DefaultTableModel;
 import org.nfunk.jep.ParseException;
 
 public class Method{
 
+    public LineChart.Series<Double, Double> series = new LineChart.Series<Double, Double>();
+    
+    
 public ObservableList<PojoPrimary> Biseccion(double xl,double xu,double Ea,Pila pila,String ecuacion){
+
 double fxl=pila.Ecuacion(ecuacion, xl);
 double porcentaje=100,xr,fxr,xrant=0;
 String signo="";
@@ -28,9 +34,11 @@ if(i!=1){
 porcentaje = (xr-xrant)/xr*100; 
 
 }
+series.getData().add(new XYChart.Data<Double,Double>(xr,fxr));
 if((fxr*fxl)>0){
 
 signo = "Positivo";
+
 pojos.add(new PojoPrimary(i, xl, xu, xr, fxr, porcentaje, signo));
 xl=xr;
 fxl=fxr;
@@ -48,6 +56,8 @@ xrant = xr;
 
 
 }while(Math.abs(porcentaje)>Ea);
+
+
 
 
 
@@ -71,7 +81,7 @@ public ObservableList<PojoPrimary> MetodoFalsaPosicion(double xl,double xu,doubl
        
         
         porcentaje=(xr-xrant)/xr*100;
-        
+        series.getData().add(new XYChart.Data<Double,Double>(xr,fxr));
         if((fxr*fxl)>0){
 
         signo = "Positivo";
@@ -150,7 +160,7 @@ public ObservableList<PojoPrimary> MetodoSecante(double x1,double x0,double Ea,P
        fxr=pila.Ecuacion(ecuacion,xr);
        
        porcentaje = (xr-xrant)/xr*100;
-       
+       series.getData().add(new XYChart.Data<Double,Double>(xr,fxr));
        pojo.add(new PojoPrimary(i, x0, x1, fx1, xr, porcentaje, null));
        
        x0=x1;
